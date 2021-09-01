@@ -30,6 +30,7 @@
     "eslint-plugin-vue": "^6.1.2",
     "json-server": "^0.16.3",
     "prettier": "^1.19.1",
+    "vue-svg-loader": "^0.16.0",
     "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
