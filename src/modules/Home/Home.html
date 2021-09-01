@@ -1,0 +1,15 @@
+<div id="app">
+  <div class="cm-container">
+    <div class="cm-logo-wrapper">
+      <img alt="Carb Manager" src="@/assets/cm-logo.svg" class="cm-logo" />
+    </div>
+    <h2>Carb Manager Dev Assignment</h2>
+    <p>...</p>
+
+    <ul>
+      <li v-for="recipe in recipes" :key="recipe" class="premium-recipe">
+        <PremiumRecipeCard :id="recipe" />
+      </li>
+    </ul>
+  </div>
+</div>

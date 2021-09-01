@@ -1,0 +1,30 @@
+#app {
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+.cm-logo-wrapper {
+  margin-bottom: 30px;
+}
+
+.cm-logo {
+  max-width: 150px;
+  height: auto;
+}
+
+.cm-container {
+  max-width: 960px;
+  margin: auto;
+}
+
+/** Remove these styles when done */
+.premium-recipe {
+  margin-top: 24px;
+  border: 2px dashed red;
+  padding: 16px;
+  list-style: none;
+}

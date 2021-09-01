@@ -1,0 +1,39 @@
+<svg viewBox="0 0 840 878" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="8%" y1="55%" x2="93%" y2="60%" id="linearGradient-1">
+            <stop stop-color="#F9482D" offset="0%"></stop>
+            <stop stop-color="#FDA021" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="4%" y1="50%" x2="53%" y2="95%" id="linearGradient-4">
+            <stop stop-color="#13BF79" offset="0%"></stop>
+            <stop stop-color="#1BCB91" offset="51%"></stop>
+            <stop stop-color="#0DC98D" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-2.2%" y="-3.7%" width="104.4%" height="107.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="10" operator="erode" in="SourceAlpha" result="shadowSpreadInner1"></feMorphology>
+            <feGaussianBlur stdDeviation="10" in="shadowSpreadInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.772560009   0 0 0 0 0.0381422062   0 0 0 0 0.0381422062  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <filter x="-1.7%" y="-1.7%" width="103.4%" height="103.4%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="10" operator="erode" in="SourceAlpha" result="shadowSpreadInner1"></feMorphology>
+            <feGaussianBlur stdDeviation="10" in="shadowSpreadInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.00480685836   0 0 0 0 0.546025815   0 0 0 0 0.315342325  0 0 0 0.6 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <path d="M552.87975,713.986176 C566.253377,737.950999 600.749495,737.901661 614.054517,713.898682 L731.852787,501.384235 L902.027817,800.248839 C911.592531,817.046571 932.963518,822.910091 949.76125,813.345376 C966.558983,803.780662 972.422503,782.409675 962.857788,765.611943 L761.857788,412.611943 C748.345052,388.880619 714.070614,389.077278 700.831087,412.962099 L583.339814,624.922707 L465.005855,412.874605 C451.661501,388.962239 417.263752,388.945598 403.896267,412.84504 L261.442802,667.930391 L275.442802,701.930391 L296.442802,747.930391 L434.408085,501.691314 L552.87975,713.986176 Z" id="path-2"></path>
+        <path d="M583,215 C680.788987,215 772.447198,253.265946 840.831182,320.422091 C910.86608,389.199507 951,482.869214 951,583 C951,786.240788 786.240788,951 583,951 C563.670034,951 548,966.670034 548,986 C548,1005.32997 563.670034,1021 583,1021 C824.90072,1021 1021,824.90072 1021,583 C1021,463.88985 973.182184,352.286477 889.878254,270.478275 C808.5339,190.594465 699.321728,145 583,145 C341.09928,145 145,341.09928 145,583 C145,583.593101 145.015076,584.186106 145.045213,584.778441 C148.356971,649.870173 157.139597,700.995436 171.980345,738.731117 C173.923135,743.671061 178.529818,754.498388 185.800396,771.213098 C193.570381,760.860181 202.589491,752.560911 212.857726,746.315288 C223.12596,740.069666 234.361574,736.481895 246.564566,735.551976 C241.943495,724.845479 238.796485,717.36532 237.123536,713.1115 C225.560238,683.709418 217.993334,639.856905 215.001025,582.121958 C215.474738,379.284895 380.051973,215 583,215 Z" id="path-5"></path>
+    </defs>
+    <g transform="translate(-143.930391, -143.930391)" fill-rule="nonzero">
+        <g>
+            <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+        </g>
+        <g transform="translate(583.000000, 583.000000) rotate(245.000000) translate(-583.000000, -583.000000) ">
+            <use fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+        </g>
+    </g>
+</svg>
