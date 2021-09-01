@@ -1,7 +1,7 @@
 import PremiumRecipeCard from "@/components/PremiumRecipeCard";
 
 export default {
-  name: "App",
+  name: "Home",
 
   components: {
     PremiumRecipeCard,
