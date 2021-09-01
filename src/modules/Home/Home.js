@@ -1,12 +1,14 @@
 import PremiumRecipeCard from "@/components/PremiumRecipeCard";
 import axiosClient from "@/utils/axios-client";
 import { appConfig } from "@/config/app";
+import CMLogoIcon from "@/assets/general/cm-logo.svg";
 
 export default {
   name: "Home",
 
   components: {
     PremiumRecipeCard,
+    CMLogoIcon,
   },
 
   data: () => ({
@@ -31,5 +33,8 @@ export default {
     filterOnlyPremiumRecipe(recipes) {
       return recipes.filter((recipe) => recipe.isPremium);
     },
+    onRecipeClick() {
+      alert('Recipe clicked!');
+    }
   },
 };
