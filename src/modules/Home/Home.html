@@ -7,8 +7,8 @@
     <p>...</p>
 
     <ul>
-      <li v-for="recipe in recipes" :key="recipe" class="premium-recipe">
-        <PremiumRecipeCard :id="recipe" />
+      <li v-for="recipe in recipes" :key="recipe.id" class="premium-recipe">
+        <PremiumRecipeCard :id="recipe.id" />
       </li>
     </ul>
   </div>

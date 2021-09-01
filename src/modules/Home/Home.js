@@ -1,4 +1,6 @@
 import PremiumRecipeCard from "@/components/PremiumRecipeCard";
+import axiosClient from "@/utils/axios-client";
+import { appConfig } from "@/config/app";
 
 export default {
   name: "Home",
@@ -8,6 +10,23 @@ export default {
   },
 
   data: () => ({
-    recipes: ["Premium", "recipes", "list", "goes", "here"],
+    recipes: [],
   }),
+
+  async mounted() {
+    await this.getRecipes();
+  },
+
+  methods: {
+    async getRecipes() {
+      await axiosClient
+        .get(appConfig.BACKEND_URL + "/recipes")
+        .then((response) => {
+          this.recipes = response.data;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+  },
 };
