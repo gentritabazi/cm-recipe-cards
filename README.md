@@ -39,19 +39,6 @@ There is a `PremiumRecipeCard.spec.js` file which you can use to write some test
 
 **Hint:** The calorie -> kilojoules conversion will be a good test case to make sure the conversion is working properly.
 
-### Other Notes
-
-- **Clone** the repo (not fork) to get started. Please don't create everything with just one commit. We would love to see how you structure your commits.
-- Don't feel like you have to stay within the placeholder files. If you want to create some helper/utility functions, go ahead and create the appropriate file/folders for that.
-- Feel free to use any tool, library or tune the project (including the setup files) to fit your needs. 
-- If you see any elements inside of this Recipe Card design that could be useful to re-use in other areas, feel free to split them out into their own sub components.
-- Macro dots
-  - Red: Carbs
-  - Blue: Protein
-  - Yellow: Fats
-- If you are unclear about something or want to run something by the team, please feel free to reach out. We like to get a sense of how you would work/collaborate on a real task.
-- Send us over the GitHub URL when you are complete so we can check it out!
-
 ### Reusability
 
 Keep in mind that there may be other variations of the Recipe Card design. Take a look at this **Recipe of the Day** card design:
