@@ -47,8 +47,6 @@ Keep in mind that there may be other variations of the Recipe Card design. Take 
 
 Don't build out this component (unless you have extra time), but please explain how you would build out this `<RecipeOfTheDay>` component with maximum code re-use from the `<PremiumRecipeCard>`, as they mostly share the same data props with just a tweaked design.
 
-You can send that over to us via email/Slack when you are done with the assignment, or you can just include it in the README file, whatever works best!
-
 ## Project setup
 
 ```
