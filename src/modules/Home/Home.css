@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
   font-family: "proxima-nova", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -17,14 +22,20 @@
 }
 
 .cm-container {
-  max-width: 960px;
+  max-width: 1150px;
   margin: auto;
 }
 
-/** Remove these styles when done */
-.premium-recipe {
-  margin-top: 24px;
-  border: 2px dashed red;
-  padding: 16px;
-  list-style: none;
+.premium-recipes-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.premium-recipes-wrapper > li {
+  margin: 20px;
 }
