@@ -1,6 +1,6 @@
 # CM Recipe Cards
 
-This is little Recipe Card in Vue Js.
+This is little Recipe Card Component in Vue Js.
 
 **Figma Link:**
 
