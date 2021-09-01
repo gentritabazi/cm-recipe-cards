@@ -22,11 +22,14 @@ export default {
       await axiosClient
         .get(appConfig.BACKEND_URL + "/recipes")
         .then((response) => {
-          this.recipes = response.data;
+          this.recipes = this.filterOnlyPremiumRecipe(response.data);
         })
         .catch((error) => {
           console.log(error);
         });
+    },
+    filterOnlyPremiumRecipe(recipes) {
+      return recipes.filter((recipe) => recipe.isPremium);
     },
   },
 };
