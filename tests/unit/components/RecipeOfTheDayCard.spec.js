@@ -1,0 +1,36 @@
+import { shallowMount } from "@vue/test-utils";
+import RecipeOfTheDayCard from "@/components/RecipeOfTheDayCard";
+
+describe("RecipeOfTheDayCard.vue", () => {
+  const wrapper = shallowMount(RecipeOfTheDayCard, {
+    propsData: {
+      title: "Low Carb Philly Cheesesteak Skillet",
+      rating: 3.5,
+      liked: true,
+      imageUrl:
+        "https://images.carbmanager.com/eEExUfrZDpNN99-qk6mECRJiBXHFc6p6XZ1EGIKnZGU/resize:fit:1200/L25jYWNoZS01NzkzZC5hcHBzcG90LmNvbS9vLzFkYzk0MjVkLWVhNTYtYzM3ZC05MTE4LWNjYmI0ZTIxNmI1My5qcGVnP2FsdD1tZWRpYSZ0b2tlbj1kYjgwYjg0NC0yNDhhLTQxOGUtYjMyOC1hODk2NDFlYjBmZjQ",
+      carbs: 50,
+      protein: 19,
+      fats: 7,
+      durationMinutes: 60,
+      energyValue: 320,
+      energyUnitType: "calories",
+    },
+  });
+
+  it("has recipe-details element", () => {
+    expect(wrapper.find(".recipe-details").exists()).toBe(true);
+  });
+
+  it("render title", () => {
+    expect(wrapper.find(".recipe-title").text()).toBe("Low Carb Philly Cheesesteak Skillet");
+  });
+
+  it("click emit event has been emitted", async () => {
+    wrapper.vm.$emit("click");
+
+    await wrapper.vm.$nextTick(); // Wait until $emits have been handled
+
+    expect(wrapper.emitted("click")).toBeTruthy();
+  });
+});
