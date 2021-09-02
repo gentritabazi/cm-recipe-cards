@@ -1,0 +1,15 @@
+.star-ratings > div {
+  display: inline-block;
+}
+
+.ratings-count {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: #1ca677;
+}
+
+.stars {
+  margin-right: 10px;
+}
