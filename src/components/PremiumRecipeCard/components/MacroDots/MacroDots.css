@@ -1,0 +1,26 @@
+.macro-dots {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.macro-dots span[class^="macro-dot"] {
+  margin-right: 5px;
+  vertical-align: top;
+  line-height: 12px;
+}
+
+.macro-dot-carbs {
+  color: #f94642;
+}
+.macro-dot-protein {
+  color: #3177bb;
+}
+.macro-dot-fats {
+  color: #fda120;
+}
+
+.macro-dots span:not(:first-child) {
+  margin-left: 10px;
+}
