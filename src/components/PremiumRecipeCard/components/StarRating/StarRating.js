@@ -16,10 +16,6 @@ export default {
       type: Number,
       default: 1,
     },
-    showRatingsCount: {
-      type: Boolean,
-      default: false,
-    },
   },
 
   computed: {
