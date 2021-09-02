@@ -7,7 +7,8 @@
     "serve": "yarn json-server & vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "code:format": "prettier --write \"src/**/*.{vue,css,js,html}\""
   },
   "dependencies": {
     "axios": "^0.21.1",
