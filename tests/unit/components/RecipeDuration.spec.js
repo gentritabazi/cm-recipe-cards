@@ -11,4 +11,14 @@ describe("RecipeDuration.vue", () => {
 
     expect(wrapper.find(".recipe-duration").text()).toEqual("1h 5m");
   });
+
+  it("Calculates 100 minutes correctly", () => {
+    const wrapper = shallowMount(RecipeDuration, {
+      propsData: {
+        minutes: 100,
+      },
+    });
+
+    expect(wrapper.find(".recipe-duration").text()).toEqual("1h 40m");
+  });
 });
