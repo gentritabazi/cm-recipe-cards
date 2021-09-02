@@ -2,6 +2,15 @@
 
 This is little Recipe Card Component in Vue Js.
 
+## Features
+
+- Modules/Components organized across folders.
+- Pre-configured with code quality tools: Prettier, Jest, ESLint etc.
+- Axios Interceptors to handle errors from backend.
+- Beautiful component like `PremiumRecipeCard` & `RecipeOfTheDayCard`.
+- Vue Mixins Included.
+- Unit tests for Components.
+
 **Figma Link:**
 
 [https://www.figma.com/file/Hv0bOihxG5M40ASYsFBrVR/Interview-Assignment?node-id=0%3A1](https://www.figma.com/file/Hv0bOihxG5M40ASYsFBrVR/Interview-Assignment?node-id=0%3A1)
