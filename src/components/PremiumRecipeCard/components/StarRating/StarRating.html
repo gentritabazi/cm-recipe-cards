@@ -1,24 +1,14 @@
 <div class="star-ratings">
   <div class="stars">
-    <span
-      class="star-gold"
-      v-for="index in Math.floor(starCount)"
-      :key="'goldstar' + index"
-    >
+    <span class="star-gold" v-for="index in Math.floor(starCount)" :key="'goldstar' + index">
       <StarGoldIcon />
     </span>
     <span class="star-half" v-if="starCount % 1 != 0">
       <StarHalfIcon width="13" height="13" viewBox="0 0 22 22" />
     </span>
-    <span
-      class="star-grey"
-      v-for="index in 5 - Math.round(starCount)"
-      :key="'greystar' + index"
-    >
+    <span class="star-grey" v-for="index in 5 - Math.round(starCount)" :key="'greystar' + index">
       <StarGreyIcon />
     </span>
   </div>
-  <div v-if="showRatingsCount" class="ratings-count">
-    {{ ratingsCount }} rating<span v-if="ratingsCount != 1">s</span>
-  </div>
+  <div v-if="showRatingsCount" class="ratings-count">{{ ratingsCount }} rating<span v-if="ratingsCount != 1">s</span></div>
 </div>

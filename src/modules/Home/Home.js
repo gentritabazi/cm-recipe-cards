@@ -34,7 +34,7 @@ export default {
       return recipes.filter((recipe) => recipe.isPremium);
     },
     onRecipeClick() {
-      alert('Recipe clicked!');
-    }
+      alert("Recipe clicked!");
+    },
   },
 };

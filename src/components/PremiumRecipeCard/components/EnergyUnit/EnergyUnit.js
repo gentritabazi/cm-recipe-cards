@@ -23,16 +23,10 @@ export default {
 
   computed: {
     energyValue() {
-      return this.formattedUnit === "kJ"
-        ? Math.round(4.184 * this.value)
-        : this.value;
+      return this.formattedUnit === "kJ" ? Math.round(4.184 * this.value) : this.value;
     },
     formattedUnit() {
-      return ["kj", "kilojoule", "kilojoules"].indexOf(
-        this.unit.toLowerCase()
-      ) > -1
-        ? "kJ"
-        : "Calories";
+      return ["kj", "kilojoule", "kilojoules"].indexOf(this.unit.toLowerCase()) > -1 ? "kJ" : "Calories";
     },
   },
 };
