@@ -23,5 +23,24 @@
         />
       </li>
     </ul>
+
+    <h2>CM Recipes - Recipe of the day</h2>
+
+    <ul class="premium-recipes-wrapper" v-if="isRecipeOfTheDayReady">
+      <li>
+        <RecipeOfTheDayCard
+          :title="recipeOfTheDay.title"
+          :image-url="recipeOfTheDay.images[0].url"
+          :carbs="recipeOfTheDay.details.nutrients.carbs"
+          :protein="recipeOfTheDay.details.nutrients.proteins"
+          :fats="recipeOfTheDay.details.nutrients.fats"
+          :duration-minutes="recipeOfTheDay.preparationTimeMinutes"
+          :energy-value="recipeOfTheDay.details.energy"
+          :energy-unit-type="authenticatedUser.energyUnits"
+          :rating="recipeOfTheDay.rating.score"
+          @click="onRecipeClick"
+        />
+      </li>
+    </ul>
   </div>
 </div>
