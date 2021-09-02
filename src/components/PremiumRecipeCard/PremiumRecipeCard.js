@@ -25,10 +25,7 @@ export default {
     rating: Number,
     ratingsCount: Number,
     liked: Boolean,
-    imageUrl: {
-      type: String,
-      default: "",
-    },
+    imageUrl: String,
     carbs: Number,
     protein: Number,
     fats: Number,
