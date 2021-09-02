@@ -30,4 +30,12 @@ describe("PremiumRecipeCard.vue", () => {
   it("render title", () => {
     expect(wrapper.find(".recipe-title").text()).toBe("Low Carb Philly Cheesesteak Skillet");
   });
+
+  it("click emit works", async () => {
+    wrapper.vm.$emit("click");
+
+    await wrapper.vm.$nextTick(); // Wait until $emits have been handled
+
+    expect(wrapper.emitted("click")).toBeTruthy();
+  });
 });
