@@ -18,8 +18,8 @@ export default {
     },
     showCount: {
       type: Boolean,
-      default: true
-    }
+      default: true,
+    },
   },
 
   computed: {
