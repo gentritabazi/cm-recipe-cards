@@ -1,1 +1,26 @@
-<div>{{ id }}</div>
+<div class="recipe-card" @click="$emit('click')">
+  <div class="recipe-image" :style="imageStyle">
+    <div class="recipe-image-overlay"></div>
+    <div class="recipe-heart">
+      <Heart :active="liked" />
+    </div>
+    <div class="premium-badge">
+      <TrophyIcon class="trophy-icon" /> Premium Recipe
+    </div>
+  </div>
+  <div class="recipe-details">
+    <h3 class="recipe-title">{{ title }}</h3>
+    <div class="spacer"></div>
+    <StarRating
+      class="star-rating"
+      :rating="rating"
+      :ratings-count="ratingsCount"
+      :show-ratings-count="true"
+    />
+    <div class="recipe-meta">
+      <RecipeDuration :minutes="recipeDurationMinutes" />
+      <EnergyUnit :value="energyValue" :unit="energyUnitType" />
+      <MacroDots :carbs="carbs" :protein="protein" :fats="fats" />
+    </div>
+  </div>
+</div>

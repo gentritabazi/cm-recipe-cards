@@ -7,7 +7,21 @@
 
     <ul class="premium-recipes-wrapper">
       <li v-for="recipe in recipes" :key="recipe.id" class="premium-recipe">
-        <PremiumRecipeCard :id="recipe.id" />
+        <PremiumRecipeCard
+          :id="recipe.id"
+          :title="recipe.title"
+          :image-url="recipe.images[0].url"
+          :liked="true"
+          :carbs="recipe.details.nutrients.carbs"
+          :protein="recipe.details.nutrients.proteins"
+          :fats="recipe.details.nutrients.fats"
+          :recipe-duration-minutes="recipe.preparationTimeMinutes"
+          :energy-value="recipe.details.energy"
+          energy-unit-type="calories"
+          :rating="recipe.rating.score"
+          :ratings-count="recipe.rating.count"
+          @click="onRecipeClick"
+        />
       </li>
     </ul>
   </div>
