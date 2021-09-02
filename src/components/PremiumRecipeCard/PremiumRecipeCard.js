@@ -8,10 +8,6 @@ import MacroDots from "./components/MacroDots";
 export default {
   name: "PremiumRecipeCard",
 
-  data: () => ({
-    hoverMode: false,
-  }),
-
   components: {
     Heart,
     TrophyIcon,
