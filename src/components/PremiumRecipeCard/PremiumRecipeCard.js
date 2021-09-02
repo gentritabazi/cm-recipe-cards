@@ -22,10 +22,6 @@ export default {
   },
 
   props: {
-    id: {
-      type: String,
-      required: true,
-    },
     title: {
       type: String,
       default: "This is default recipe title",

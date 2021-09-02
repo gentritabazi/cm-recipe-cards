@@ -8,7 +8,6 @@
     <ul class="premium-recipes-wrapper">
       <li v-for="recipe in recipes" :key="recipe.id" class="premium-recipe">
         <PremiumRecipeCard
-          :id="recipe.id"
           :title="recipe.title"
           :image-url="recipe.images[0].url"
           :liked="true"
