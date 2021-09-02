@@ -16,7 +16,7 @@
           :fats="recipe.details.nutrients.fats"
           :recipe-duration-minutes="recipe.preparationTimeMinutes"
           :energy-value="recipe.details.energy"
-          energy-unit-type="calories"
+          :energy-unit-type="authenticatedUser.energyUnits"
           :rating="recipe.rating.score"
           :ratings-count="recipe.rating.count"
           @click="onRecipeClick"

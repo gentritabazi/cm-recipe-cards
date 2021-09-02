@@ -13,13 +13,25 @@ export default {
 
   data: () => ({
     recipes: [],
+    authenticatedUser: {},
   }),
 
   async mounted() {
+    await this.getAuthenticatedUser();
     await this.getRecipes();
   },
 
   methods: {
+    async getAuthenticatedUser() {
+      await axiosClient
+        .get(appConfig.BACKEND_URL + "/user")
+        .then((response) => {
+          this.authenticatedUser = response.data;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
     async getRecipes() {
       await axiosClient
         .get(appConfig.BACKEND_URL + "/recipes")
