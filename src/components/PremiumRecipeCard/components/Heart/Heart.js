@@ -5,6 +5,7 @@ export default {
   components: { HeartIcon, HeartFullIcon },
 
   name: "Heart",
+
   props: {
     active: {
       type: Boolean,
