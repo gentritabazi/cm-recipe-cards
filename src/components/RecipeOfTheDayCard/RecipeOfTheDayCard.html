@@ -1,0 +1,15 @@
+<div class="recipe-card" :style="imageStyle" @click="$emit('click')">
+  <div class="recipe-details">
+    <div class="recipe-title-prefix">Recipe of the day</div>
+    <h3 class="recipe-title">{{ title }}</h3>
+    <StarRating :rating="rating" :showCount="false" />
+    <div class="recipe-meta">
+      <RecipeDuration :minutes="durationMinutes" :show-icon="false" />
+      <EnergyUnit :value="energyValue" :unit="energyUnitType" :show-icon="false" />
+    </div>
+    <div class="bottom-row">
+      <MacroDots :carbs="carbs" :protein="protein" :fats="fats" class="macro-dots" />
+      <div class="btn-learn-more">Learn More</div>
+    </div>
+  </div>
+</div>
