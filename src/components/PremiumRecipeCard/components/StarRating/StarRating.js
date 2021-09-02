@@ -16,6 +16,10 @@ export default {
       type: Number,
       default: 1,
     },
+    showCount: {
+      type: Boolean,
+      default: true
+    }
   },
 
   computed: {
