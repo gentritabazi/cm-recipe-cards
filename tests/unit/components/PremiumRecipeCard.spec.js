@@ -19,11 +19,11 @@ describe("PremiumRecipeCard.vue", () => {
     },
   });
 
-  it("has ecipe-image", () => {
+  it("has recipe-image element", () => {
     expect(wrapper.find(".recipe-image").exists()).toBe(true);
   });
 
-  it("has recipe-details", () => {
+  it("has recipe-details element", () => {
     expect(wrapper.find(".recipe-details").exists()).toBe(true);
   });
 
