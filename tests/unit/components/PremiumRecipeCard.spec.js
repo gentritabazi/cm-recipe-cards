@@ -31,7 +31,7 @@ describe("PremiumRecipeCard.vue", () => {
     expect(wrapper.find(".recipe-title").text()).toBe("Low Carb Philly Cheesesteak Skillet");
   });
 
-  it("click emit works", async () => {
+  it("click emit event has been emitted", async () => {
     wrapper.vm.$emit("click");
 
     await wrapper.vm.$nextTick(); // Wait until $emits have been handled
