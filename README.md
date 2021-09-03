@@ -11,6 +11,10 @@ This is little Recipe Card Component in Vue Js.
 - Vue Mixins Included.
 - Unit tests for Components.
 
+**Preview:**
+
+![Preview](.github/Preview.png)
+
 **Figma Link:**
 
 [https://www.figma.com/file/Hv0bOihxG5M40ASYsFBrVR/Interview-Assignment?node-id=0%3A1](https://www.figma.com/file/Hv0bOihxG5M40ASYsFBrVR/Interview-Assignment?node-id=0%3A1)
