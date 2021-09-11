@@ -1,6 +1,6 @@
 # CM Recipe Cards
 
-This is little Recipe Card Component in Vue Js.
+This project contains two components for vue js: `PremiumRecipeCard` and `RecipeOfTheDayCard`.
 
 ## Features
 
